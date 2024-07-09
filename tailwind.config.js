@@ -19,7 +19,13 @@ export default {
         },
     },
 
+
+
     plugins: [
         require('@tailwindcss/forms'),
         forms, typography],
 };
+
+module.exports = {
+    plugins: [require('@tailwindcss/forms'),]
+  };

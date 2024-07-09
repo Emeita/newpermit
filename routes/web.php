@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\UserController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -18,3 +19,4 @@ Route::get('/', function () {
 // });
 
 route::get('/home',[AdminController::class,'index'])->name('home');
+Route::get('/users', [UserController::class, 'index'])->name('users.index');
